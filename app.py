@@ -25,7 +25,12 @@ if texto == "Olá":
     engine.runAndWait()
     engine.stop()
 
-if texto == "Encerrar o expediente":
+if texto == "encerrar o expediente":
+
+    engine.say("Até a próxima chefia")
+    engine.runAndWait()
+    engine.stop()
+    
     os.system("shutdown /s /t 1")
 
 
