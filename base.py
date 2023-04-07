@@ -13,13 +13,14 @@ with sr.Microphone(device_index=0) as mic:
     texto = rec.recognize_google(audio, language="pt-BR")
     print(texto)
 
-if texto == "olá":
-    print("Olá capitão")
-        
-engine = pyttsx3.init()
+if texto == "Olá":
 
-engine.say(texto)
-engine.runAndWait()
-engine.stop()
+    print(1+1)
+    
+    engine = pyttsx3.init()
+
+    engine.say("Olá Daniel, seja bem vindo!")
+    engine.runAndWait()
+    engine.stop()
 
 input()
