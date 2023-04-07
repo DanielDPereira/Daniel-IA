@@ -3,6 +3,12 @@ import pyttsx3
 from art import *
 import os
 
+#Inicializando e configurando o mecanismo de voz do programa
+engine = pyttsx3.init()
+voice = engine.getProperty('voices') #get the available voices
+#eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
+engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female voice
+
 rec = sr.Recognizer()
 #print(sr.Microphone().list_microphone_names())
 with sr.Microphone(device_index=0) as mic:
@@ -14,13 +20,13 @@ with sr.Microphone(device_index=0) as mic:
     print(texto)
 
 if texto == "Olá":
-
-    print(1+1)
     
-    engine = pyttsx3.init()
-
     engine.say("Olá Daniel, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
+
+if texto == "Encerrar o expediente":
+    os.system("shutdown /s /t 1")
+
 
 input()
