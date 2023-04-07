@@ -1,4 +1,5 @@
 import speech_recognition as sr
+import pyttsx3
 from art import *
 import os
 
@@ -12,7 +13,13 @@ with sr.Microphone(device_index=0) as mic:
     texto = rec.recognize_google(audio, language="pt-BR")
     print(texto)
 
-    if texto == "Olá" or "olá":
-        print("Olá capitão")
+if texto == "olá":
+    print("Olá capitão")
+        
+engine = pyttsx3.init()
+
+engine.say(texto)
+engine.runAndWait()
+engine.stop()
 
 input()
