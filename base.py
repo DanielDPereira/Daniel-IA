@@ -3,6 +3,7 @@ import pyttsx3
 from art import *
 import os
 
+#Inicializando e configurando o mecanismo de voz do programa
 engine = pyttsx3.init()
 voice = engine.getProperty('voices') #get the available voices
 #eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
