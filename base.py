@@ -21,9 +21,6 @@ with sr.Microphone(device_index=0) as mic:
 
 if texto == "Olá":
     
-    #eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
-    engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female voice
-
     engine.say("Olá Daniel, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
