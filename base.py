@@ -4,6 +4,7 @@ from art import *
 import os
 
 engine = pyttsx3.init()
+
 rec = sr.Recognizer()
 #print(sr.Microphone().list_microphone_names())
 with sr.Microphone(device_index=0) as mic:
@@ -23,5 +24,9 @@ if texto == "Olá":
     engine.say("Olá Daniel, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
+
+if texto == "Encerrar o expediente":
+    os.system("shutdown /s /t 1")
+
 
 input()
