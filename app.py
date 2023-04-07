@@ -26,6 +26,12 @@ if texto == "Olá":
     engine.runAndWait()
     engine.stop()
 
+if texto == "Que horas são":
+
+    engine.say(datetime.datetime.now())
+    engine.runAndWait()
+    engine.stop()
+
 if texto == "encerrar o expediente":
 
     engine.say("Até a próxima chefia")
