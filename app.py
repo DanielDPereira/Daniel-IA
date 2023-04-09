@@ -40,5 +40,8 @@ if texto == "encerrar o expediente":
     
     os.system("shutdown /s /t 1")
 
+if texto == "Abrir Google":
+    os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
+
 
 input()
