@@ -43,5 +43,8 @@ if texto == "encerrar o expediente":
 if texto == "Abrir Google":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
+    engine.say("Programa Google Chrome aberto senhor Daniel")
+    engine.runAndWait()
+    engine.stop()
 
 input()
