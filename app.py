@@ -3,6 +3,7 @@ import pyttsx3
 from art import *
 import os
 import datetime
+import psutil
 
 #Inicializando e configurando o mecanismo de voz do programa
 engine = pyttsx3.init()
@@ -37,6 +38,15 @@ if texto == "olá" or texto == "oi":
     engine.say("Olá Daniel, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
+
+if texto == "status da bateria":
+    bateria = psutil.sensors_battery()
+    percentual_bateria = str(bateria.percent)
+    engine.say(f"O sistema está com um total de {percentual_bateria}% de bateria!")
+    engine.runAndWait()
+    engine.stop()
+
+    
 
 if texto == "que horas são":
 
