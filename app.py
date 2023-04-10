@@ -48,8 +48,6 @@ if texto == "status da bateria":
     engine.runAndWait()
     engine.stop()
 
-    
-
 if texto == "que horas são":
 
     hora = datetime.datetime.now()
