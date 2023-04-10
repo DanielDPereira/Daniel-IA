@@ -18,7 +18,8 @@ with sr.Microphone(device_index=0) as mic:
     tprint("WELCOME MR. DANIEL")
     audio = rec.listen(mic)
     texto = rec.recognize_google(audio, language="pt-BR")
-    
+
+    texto = texto.capitalize()
     print("O senhor disse:")
     print(texto)
 
@@ -43,14 +44,14 @@ if texto == "que horas são":
     engine.runAndWait()
     engine.stop()
 
-if texto == "abrir Google":
+if texto == "abrir google":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
     engine.say("Programa Google Chrome aberto, conforme as suas ordens senhor Daniel")
     engine.runAndWait()
     engine.stop()
 
-if texto == "abrir Spotify":
+if texto == "abrir spotify":
     os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
     engine.say("Programa Spotify aberto, conforme as suas ordens senhor Daniel")
