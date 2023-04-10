@@ -30,7 +30,9 @@ if texto == "Olá" or texto == "Oi":
 
 if texto == "Que horas são":
 
-    engine.say(datetime.datetime.now())
+    hora = datetime.datetime.now()
+    
+    engine.say(hora)
     engine.runAndWait()
     engine.stop()
 
