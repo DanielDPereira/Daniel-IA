@@ -68,7 +68,7 @@ if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chr
     engine.runAndWait()
     engine.stop()
 
-if texto == "abrir spotify":
+if texto == "abrir spotify" or texto == "abrir o spotify":
     os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
     engine.say("Programa Spotify aberto, conforme as suas ordens senhor Daniel")
