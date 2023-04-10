@@ -31,8 +31,13 @@ if texto == "Olá" or texto == "Oi":
 if texto == "Que horas são":
 
     hora = datetime.datetime.now()
+
+    hora = str(hora).split()
+    hora = hora[1]
+    hora = hora.split(":")
+    hora = hora[0] + " horas e " + hora[1] + " minutos"
     
-    engine.say(hora)
+    engine.say("Agora são " + hora + " senhor Daniel")
     engine.runAndWait()
     engine.stop()
 
