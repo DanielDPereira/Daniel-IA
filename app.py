@@ -37,7 +37,7 @@ with sr.Microphone(device_index=0) as mic:
 
 if texto == "olá" or texto == "oi":
     
-    engine.say("Olá Daniel, seja bem vindo!")
+    engine.say(f"Olá {MyName}, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
 
