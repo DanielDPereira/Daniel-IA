@@ -5,6 +5,8 @@ import os
 import datetime
 import psutil
 
+MyName = "Senhor Daniel"
+
 #Inicializando e configurando o mecanismo de voz do programa
 engine = pyttsx3.init()
 voice = engine.getProperty('voices') #get the available voices
