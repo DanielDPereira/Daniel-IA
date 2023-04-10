@@ -22,13 +22,15 @@ with sr.Microphone(device_index=0) as mic:
     print("O senhor disse:")
     print(texto)
 
-if texto == "Olá" or texto == "Oi":
+    texto = texto.lower()
+
+if texto == "olá" or texto == "oi":
     
     engine.say("Olá Daniel, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
 
-if texto == "Que horas são":
+if texto == "que horas são":
 
     hora = datetime.datetime.now()
 
@@ -41,14 +43,14 @@ if texto == "Que horas são":
     engine.runAndWait()
     engine.stop()
 
-if texto == "Abrir Google":
+if texto == "abrir Google":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
     engine.say("Programa Google Chrome aberto, conforme as suas ordens senhor Daniel")
     engine.runAndWait()
     engine.stop()
 
-if texto == "Abrir Spotify":
+if texto == "abrir Spotify":
     os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
     engine.say("Programa Spotify aberto, conforme as suas ordens senhor Daniel")
