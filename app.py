@@ -77,7 +77,7 @@ if texto == "abrir spotify" or texto == "abrir o spotify":
 
 if texto == "encerrar o expediente":
 
-    engine.say("Até a próxima chefia")
+    engine.say("Desligando o sistema, até a próxima senhor Daniel")
     engine.runAndWait()
     engine.stop()
     
