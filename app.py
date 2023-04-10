@@ -61,7 +61,7 @@ if texto == "que horas são":
     engine.runAndWait()
     engine.stop()
 
-if texto == "abrir google":
+if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
     engine.say("Programa Google Chrome aberto, conforme as suas ordens senhor Daniel")
