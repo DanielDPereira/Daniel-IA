@@ -49,4 +49,11 @@ if texto == "Abrir Google":
     engine.runAndWait()
     engine.stop()
 
+if texto == "Abrir Spotify":
+    os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
+
+    engine.say("Programa Spotify aberto, conforme as suas ordens senhor Daniel")
+    engine.runAndWait()
+    engine.stop()
+
 input()
