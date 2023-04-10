@@ -34,8 +34,6 @@ if texto == "Que horas são":
     engine.runAndWait()
     engine.stop()
 
-
-
 if texto == "Abrir Google":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
