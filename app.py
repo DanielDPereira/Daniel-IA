@@ -22,7 +22,7 @@ with sr.Microphone(device_index=0) as mic:
     print("O senhor disse:")
     print(texto)
 
-if texto == "Olá":
+if texto == "Olá" or texto == "Oi":
     
     engine.say("Olá Daniel, seja bem vindo!")
     engine.runAndWait()
@@ -45,7 +45,7 @@ if texto == "encerrar o expediente":
 if texto == "Abrir Google":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
-    engine.say("Programa Google Chrome aberto senhor Daniel")
+    engine.say("Programa Google Chrome aberto, conforme as suas ordens senhor Daniel")
     engine.runAndWait()
     engine.stop()
 
