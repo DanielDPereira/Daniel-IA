@@ -34,13 +34,7 @@ if texto == "Que horas são":
     engine.runAndWait()
     engine.stop()
 
-if texto == "encerrar o expediente":
 
-    engine.say("Até a próxima chefia")
-    engine.runAndWait()
-    engine.stop()
-    
-    os.system("shutdown /s /t 1")
 
 if texto == "Abrir Google":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
