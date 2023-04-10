@@ -18,6 +18,7 @@ with sr.Microphone(device_index=0) as mic:
     tprint("WELCOME MR. DANIEL")
     audio = rec.listen(mic)
     texto = rec.recognize_google(audio, language="pt-BR")
+    
     print("O senhor disse:")
     print(texto)
 
