@@ -59,7 +59,7 @@ if texto == "que horas são":
     hora = hora.split(":")
     hora = hora[0] + " horas e " + hora[1] + " minutos"
     
-    engine.say("Agora são " + hora + " senhor Daniel")
+    engine.say(f"Agora são {hora} {MyName}")
     engine.runAndWait()
     engine.stop()
 
