@@ -5,6 +5,7 @@ import os
 import datetime
 import psutil
 
+SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
 MyName = "Senhor Daniel"
 
 #Inicializando e configurando o mecanismo de voz do programa
