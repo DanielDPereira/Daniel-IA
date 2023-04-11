@@ -33,7 +33,7 @@ def DAISE_():
         texto = rec.recognize_google(audio, language="pt-BR")
 
         texto = texto.capitalize()
-        print("O senhor disse:")
+        print("O senhor(a) disse:")
         print(texto)
 
         texto = texto.lower()
