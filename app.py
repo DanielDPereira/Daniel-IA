@@ -21,7 +21,7 @@ with sr.Microphone(device_index=0) as mic:
     #print("Pode falar que eu vou gravar")
 
     '''
-    engine.say("Olá Daniel! Eu sou o seu sistema de assistência personalizado e estou aqui para te ajudar")
+    engine.say(f"Olá {MyName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
     engine.runAndWait()
     engine.stop()
     '''
