@@ -10,6 +10,7 @@ SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
 UserName = "Senhor Daniel"
 
 def DAISE_():
+    
     #Inicializando e configurando o mecanismo de voz do programa
     engine = pyttsx3.init()
     voice = engine.getProperty('voices') #get the available voices
