@@ -31,7 +31,9 @@ def DAISE_():
 
         tprint("Welcome   Mr.   Daniel")
         audio = rec.listen(mic)
+        
         try:
+            
             texto = rec.recognize_google(audio, language="pt-BR")
 
             texto = texto.capitalize()
