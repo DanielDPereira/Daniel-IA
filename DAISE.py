@@ -3,6 +3,7 @@ import pyttsx3
 from art import *
 import os
 import datetime
+import keyboard as kb
 import psutil
 
 SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
