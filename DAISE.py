@@ -7,7 +7,7 @@ import keyboard as kb
 import psutil
 
 SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
-MyName = "Senhor Daniel"
+UserName = "Senhor Daniel"
 
 #Inicializando e configurando o mecanismo de voz do programa
 engine = pyttsx3.init()
@@ -22,7 +22,7 @@ with sr.Microphone(device_index=0) as mic:
     #print("Pode falar que eu vou gravar")
 
     '''
-    engine.say(f"Olá {MyName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
+    engine.say(f"Olá {UserName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
     engine.runAndWait()
     engine.stop()
     '''
@@ -39,7 +39,7 @@ with sr.Microphone(device_index=0) as mic:
 
 if texto == "olá" or texto == "oi":
     
-    engine.say(f"Olá {MyName}, seja bem vindo!")
+    engine.say(f"Olá {UserName}, seja bem vindo!")
     engine.runAndWait()
     engine.stop()
 
@@ -61,27 +61,27 @@ if texto == "que horas são":
     hora = hora.split(":")
     hora = hora[0] + " horas e " + hora[1] + " minutos"
     
-    engine.say(f"Agora são {hora} {MyName}")
+    engine.say(f"Agora são {hora} {UserName}")
     engine.runAndWait()
     engine.stop()
 
 if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
-    engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {MyName}")
+    engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
     engine.runAndWait()
     engine.stop()
 
 if texto == "abrir spotify" or texto == "abrir o spotify":
     os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
-    engine.say(f"Programa Spotify aberto, conforme as suas ordens {MyName}")
+    engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
     engine.runAndWait()
     engine.stop()
 
 if texto == "encerrar o expediente":
 
-    engine.say(f"Desligando o sistema, até a próxima {MyName}")
+    engine.say(f"Desligando o sistema, até a próxima {UserName}")
     engine.runAndWait()
     engine.stop()
     
