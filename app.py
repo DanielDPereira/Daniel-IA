@@ -66,14 +66,14 @@ if texto == "que horas são":
 if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome":
     os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
-    engine.say("Programa Google Chrome aberto, conforme as suas ordens senhor Daniel")
+    engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {MyName}")
     engine.runAndWait()
     engine.stop()
 
 if texto == "abrir spotify" or texto == "abrir o spotify":
     os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
-    engine.say("Programa Spotify aberto, conforme as suas ordens senhor Daniel")
+    engine.say(f"Programa Spotify aberto, conforme as suas ordens {MyName}")
     engine.runAndWait()
     engine.stop()
 
