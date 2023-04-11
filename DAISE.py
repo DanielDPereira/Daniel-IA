@@ -31,63 +31,67 @@ def DAISE_():
 
         tprint("Welcome   Mr.   Daniel")
         audio = rec.listen(mic)
-        texto = rec.recognize_google(audio, language="pt-BR")
+        try:
+            texto = rec.recognize_google(audio, language="pt-BR")
 
-        texto = texto.capitalize()
-        print("O senhor(a) disse:")
-        print(texto)
+            texto = texto.capitalize()
+            print("O senhor(a) disse:")
+            print(texto)
 
-        texto = texto.lower()
+            texto = texto.lower()
 
-    if texto == "olá" or texto == "oi":
-        
-        engine.say(f"Olá {UserName}, seja bem vindo!")
-        engine.runAndWait()
-        engine.stop()
+            if texto == "olá" or texto == "oi":
+                
+                engine.say(f"Olá {UserName}, seja bem vindo!")
+                engine.runAndWait()
+                engine.stop()
 
-    if texto == "status da bateria":
-        
-        bateria = psutil.sensors_battery()
-        percentual_bateria = str(bateria.percent)
-        
-        engine.say(f"{UserName}, o sistema está com um total de {percentual_bateria}% de bateria!")
-        engine.runAndWait()
-        engine.stop()
+            if texto == "status da bateria":
+                
+                bateria = psutil.sensors_battery()
+                percentual_bateria = str(bateria.percent)
+                
+                engine.say(f"{UserName}, o sistema está com um total de {percentual_bateria}% de bateria!")
+                engine.runAndWait()
+                engine.stop()
 
-    if texto == "que horas são":
+            if texto == "que horas são":
 
-        hora = datetime.datetime.now()
+                hora = datetime.datetime.now()
 
-        hora = str(hora).split()
-        hora = hora[1]
-        hora = hora.split(":")
-        hora = hora[0] + " horas e " + hora[1] + " minutos"
-        
-        engine.say(f"Agora são {hora} {UserName}")
-        engine.runAndWait()
-        engine.stop()
+                hora = str(hora).split()
+                hora = hora[1]
+                hora = hora.split(":")
+                hora = hora[0] + " horas e " + hora[1] + " minutos"
+                
+                engine.say(f"Agora são {hora} {UserName}")
+                engine.runAndWait()
+                engine.stop()
 
-    if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome":
-        os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
+            if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome":
+                os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
-        engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
-        engine.runAndWait()
-        engine.stop()
+                engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()
 
-    if texto == "abrir spotify" or texto == "abrir o spotify":
-        os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
+            if texto == "abrir spotify" or texto == "abrir o spotify":
+                os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
-        engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
-        engine.runAndWait()
-        engine.stop()
+                engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()
 
-    if texto == "encerrar o expediente":
+            if texto == "encerrar o expediente":
 
-        engine.say(f"Desligando o sistema, até a próxima {UserName}")
-        engine.runAndWait()
-        engine.stop()
-        
-        os.system("shutdown /s /t 1")
+                engine.say(f"Desligando o sistema, até a próxima {UserName}")
+                engine.runAndWait()
+                engine.stop()
+                
+                os.system("shutdown /s /t 1")
+
+        except Exception as e:
+            return "None"
 
 while True:
     DAISE_()
