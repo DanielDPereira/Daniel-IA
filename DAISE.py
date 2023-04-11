@@ -48,7 +48,7 @@ if texto == "status da bateria":
     bateria = psutil.sensors_battery()
     percentual_bateria = str(bateria.percent)
     
-    engine.say(f"O sistema está com um total de {percentual_bateria}% de bateria!")
+    engine.say(f"{UserName}, o sistema está com um total de {percentual_bateria}% de bateria!")
     engine.runAndWait()
     engine.stop()
 
