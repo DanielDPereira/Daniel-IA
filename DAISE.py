@@ -32,7 +32,7 @@ def DAISE_():
         engine.stop()
         '''
 
-        print("---")
+        print("...")
         audio = rec.listen(mic)
         
         try:
