@@ -100,5 +100,3 @@ def DAISE_():
 
 while True:
     DAISE_()
-
-input()
