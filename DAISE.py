@@ -6,10 +6,10 @@ import datetime
 import keyboard as kb
 import psutil
 
-SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
+SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Especial
 UserName = "Senhor Daniel"
 
-print("Loading DAISE system...")
+print("Loading DEISE system...")
 tprint("Welcome   Mr.   Daniel")
 
 def DAISE_():
@@ -26,11 +26,11 @@ def DAISE_():
         rec.adjust_for_ambient_noise(mic)
         #print("Pode falar que eu vou gravar")
 
-        '''
+        
         engine.say(f"Olá {UserName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
         engine.runAndWait()
         engine.stop()
-        '''
+        
 
         print("...")
         audio = rec.listen(mic)
