@@ -19,9 +19,11 @@ engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female v
 
 tprint("Welcome   Mr.   Daniel")
 
+"""
 engine.say(f"Olá {UserName}! Eu sou a {SysName}, sua assistente pessoal e estou aqui para te ajudar")
 engine.runAndWait()
 engine.stop()
+"""
 
 def DAISE_():
 
