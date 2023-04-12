@@ -29,7 +29,7 @@ def DAISE_():
         engine.stop()
         '''
 
-        tprint("Welcome   Mr.   Daniel")
+        print("---")
         audio = rec.listen(mic)
         
         try:
