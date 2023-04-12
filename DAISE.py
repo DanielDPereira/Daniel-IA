@@ -10,15 +10,20 @@ SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Especial
 UserName = "Senhor Daniel"
 
 print("Loading DEISE system...")
+
+    #Inicializando e configurando o mecanismo de voz do programa
+engine = pyttsx3.init()
+voice = engine.getProperty('voices') #get the available voices
+    #eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
+engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female voice
+
 tprint("Welcome   Mr.   Daniel")
 
+engine.say(f"Olá {UserName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
+engine.runAndWait()
+engine.stop()
+
 def DAISE_():
-    
-    #Inicializando e configurando o mecanismo de voz do programa
-    engine = pyttsx3.init()
-    voice = engine.getProperty('voices') #get the available voices
-    #eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
-    engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female voice
 
     rec = sr.Recognizer()
     #print(sr.Microphone().list_microphone_names())
