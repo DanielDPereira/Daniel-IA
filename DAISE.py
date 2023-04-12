@@ -9,6 +9,8 @@ import psutil
 SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
 UserName = "Senhor Daniel"
 
+tprint("Welcome   Mr.   Daniel")
+
 def DAISE_():
     
     #Inicializando e configurando o mecanismo de voz do programa
