@@ -26,11 +26,11 @@ def DAISE_():
         rec.adjust_for_ambient_noise(mic)
         #print("Pode falar que eu vou gravar")
 
-        
+        """
         engine.say(f"Olá {UserName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
         engine.runAndWait()
         engine.stop()
-        
+        """
 
         print("...")
         audio = rec.listen(mic)
