@@ -11,10 +11,10 @@ UserName = "Senhor Daniel"
 
 print("Loading DEISE system...")
 
-    #Inicializando e configurando o mecanismo de voz do programa
+#Inicializando e configurando o mecanismo de voz do programa
 engine = pyttsx3.init()
 voice = engine.getProperty('voices') #get the available voices
-    #eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
+#eng.setProperty('voice', voice[0].id) #set the voice to index 0 for male voice
 engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female voice
 
 tprint("Welcome   Mr.   Daniel")
@@ -30,12 +30,6 @@ def DAISE_():
     with sr.Microphone(device_index=0) as mic:
         rec.adjust_for_ambient_noise(mic)
         #print("Pode falar que eu vou gravar")
-
-        """
-        engine.say(f"Olá {UserName}! Eu sou a {SysName}, seu assistente pessoal e estou aqui para te ajudar")
-        engine.runAndWait()
-        engine.stop()
-        """
 
         print("...")
         audio = rec.listen(mic)
