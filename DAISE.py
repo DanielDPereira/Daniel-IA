@@ -9,7 +9,7 @@ import psutil
 SysName = "DAISE" #Daniel Asistente Inteligente de Serviço Especial
 UserName = "Senhor Daniel"
 
-print("Loading DAISE...")
+print("Loading DAISE system...")
 tprint("Welcome   Mr.   Daniel")
 
 def DAISE_():
