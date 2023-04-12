@@ -50,6 +50,12 @@ def DAISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            if texto == "quem é você":
+                
+                engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Especial do Daniel e existo para ajudá-lo!")
+                engine.runAndWait()
+                engine.stop()
+
             if texto == "status da bateria":
                 
                 bateria = psutil.sensors_battery()
