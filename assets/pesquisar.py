@@ -1,6 +1,13 @@
 import os
 
-pesquisa = "homem aranha"
-src = "https://www.google.com/search?q={pesquisa}"
+pesquisa = "homem aranha sem volta para casa"
+pesquisa = pesquisa.split()
+print(pesquisa)
 
-os.system(f"start https://www.google.com/search?q="+pesquisa)
+pesquisa = "+".join(pesquisa) 
+
+print(pesquisa)
+
+src = "https://www.google.com/search?q="
+
+#os.system(f"start https://www.google.com/search?q="+pesquisa)
