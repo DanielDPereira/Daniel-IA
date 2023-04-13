@@ -8,6 +8,6 @@ pesquisa = "+".join(pesquisa)
 
 print(pesquisa)
 
-src = "https://www.google.com/search?q="
+src = "https://www.google.com/search?q="+str(pesquisa)
 
-#os.system(f"start https://www.google.com/search?q="+pesquisa)
+os.system(f"start {src}")
