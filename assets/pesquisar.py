@@ -1,14 +1,16 @@
 import os
 
 pesquisa = "pesquisar homem aranha sem volta para casa"
-pesquisa = pesquisa.split()
+pesquisa1 = pesquisa.split()
 
-print(pesquisa)
-pesquisa.pop(0)
-print(pesquisa)
+if pesquisa1[0] == "pesquisar":
 
-pesquisa = "+".join(pesquisa) 
+    print(pesquisa1)
+    pesquisa1.pop(0)
+    print(pesquisa1)
 
-url = "https://www.google.com/search?q="+str(pesquisa)
+    pesquisa1 = "+".join(pesquisa1) 
 
-os.system(f"start {url}")
+    url = "https://www.google.com/search?q="+str(pesquisa1)
+
+    os.system(f"start {url}")
