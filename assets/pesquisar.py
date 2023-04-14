@@ -1,6 +1,6 @@
 import os
 
-pesquisa = "homem aranha sem volta para casa"
+pesquisa = "pesquisar homem aranha sem volta para casa"
 pesquisa = pesquisa.split()
 
 print(pesquisa)
