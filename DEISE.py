@@ -96,7 +96,7 @@ def DAISE_():
 
             pesquisa1 = texto.split()
 
-            if pesquisa1[0] == "pesquisar":
+            if pesquisa1[0] == "pesquisar" or pesquisa1[0] == "search":
 
                 pesquisa1.pop(0)
 
