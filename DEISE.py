@@ -98,13 +98,15 @@ def DAISE_():
 
             if pesquisa1[0] == "pesquisar":
 
-                print(pesquisa1)
                 pesquisa1.pop(0)
-                print(pesquisa1)
 
-                pesquisa1 = "+".join(pesquisa1) 
+                pesquisa2 = "+".join(pesquisa1) 
 
-                url = "https://www.google.com/search?q="+str(pesquisa1)
+                url = "https://www.google.com/search?q="+str(pesquisa2)
+
+                engine.say(f"{UserName}, pesquisa {pesquisa1} aberta com sucesso!")
+                engine.runAndWait()
+                engine.stop()
 
                 os.system(f"start {url}")
 
