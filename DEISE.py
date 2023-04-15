@@ -58,6 +58,12 @@ def DAISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            if texto == "alpha" or texto == "alfa":
+
+                engine.say("BOTS!!!")
+                engine.runAndWait()
+                engine.stop()
+
             if texto == "status da bateria":
                 
                 bateria = psutil.sensors_battery()
