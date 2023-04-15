@@ -104,11 +104,11 @@ def DAISE_():
 
                 url = "https://www.google.com/search?q="+str(pesquisa2)
 
+                os.system(f"start {url}")
+
                 engine.say(f"{UserName}, pesquisa {pesquisa1} aberta com sucesso!")
                 engine.runAndWait()
                 engine.stop()
-
-                os.system(f"start {url}")
 
             if texto == "encerrar o expediente":
 
