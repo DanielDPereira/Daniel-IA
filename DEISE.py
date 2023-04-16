@@ -35,6 +35,8 @@ def DAISE_():
         #print("Pode falar que eu vou gravar")
 
         print("...")
+
+        time.sleep(0.5)
         
         audio = rec.listen(mic)
         
