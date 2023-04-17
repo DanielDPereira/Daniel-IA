@@ -97,6 +97,8 @@ def DAISE_():
                 engine.runAndWait()
                 engine.stop()
 
+                #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+
             if texto == "abrir spotify" or texto == "abrir o spotify":
                 os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
