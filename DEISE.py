@@ -122,6 +122,19 @@ def DAISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            if pesquisa1[0] == "abrir" and pesquisa1[1] == "site":
+
+                pesquisa1.pop(0)
+                pesquisa1.pop(0)
+
+                url = pesquisa1[0]
+
+                os.system(f"start https://www{url}")
+
+                engine.say(f"{UserName}, pesquisa {pesquisa1} aberta com sucesso!")
+                engine.runAndWait()
+                engine.stop()
+
             if texto == "encerrar o expediente":
 
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
