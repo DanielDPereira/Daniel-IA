@@ -122,7 +122,7 @@ def DAISE_():
                 engine.runAndWait()
                 engine.stop()
 
-            if pesquisa1[0] == "abrir" and pesquisa1[1] == "site":
+            if pesquisa1[0] == "abrir" and pesquisa1[1] == "site" or pesquisa1[1] == "url":
 
                 pesquisa1.pop(0)
                 pesquisa1.pop(0)
