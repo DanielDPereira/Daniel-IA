@@ -131,7 +131,7 @@ def DAISE_():
 
                 os.system(f"start https://www.{url}")
 
-                engine.say(f"{UserName}, pesquisa {pesquisa1} aberta com sucesso!")
+                engine.say(f"{UserName}, site {pesquisa1} aberto com sucesso!")
                 engine.runAndWait()
                 engine.stop()
 
