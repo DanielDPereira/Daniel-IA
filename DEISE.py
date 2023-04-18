@@ -36,7 +36,7 @@ def DAISE_():
 
         print("...")
 
-        time.sleep(0.5)
+        time.sleep(0.3)
         
         audio = rec.listen(mic)
         
