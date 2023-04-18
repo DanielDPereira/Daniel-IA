@@ -31,7 +31,7 @@ def DAISE_():
     rec = sr.Recognizer()
     #print(sr.Microphone().list_microphone_names())
     with sr.Microphone(device_index=0) as mic:
-        #rec.adjust_for_ambient_noise(mic)
+        rec.adjust_for_ambient_noise(mic)
         #print("Pode falar que eu vou gravar")
 
         print("...")
