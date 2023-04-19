@@ -38,7 +38,7 @@ def DEISE_():
         
         try:
             
-            texto = "pesquisar imagem python"
+            texto = rec.recognize_google(audio, language="pt-BR")
 
             texto = texto.capitalize()
             print("O senhor(a) disse:")
