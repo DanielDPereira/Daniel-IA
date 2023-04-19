@@ -26,7 +26,7 @@ engine.runAndWait()
 engine.stop()
 """
 
-def DAISE_():
+def DEISE_():
 
 
         #print("Pode falar que eu vou gravar")
@@ -151,4 +151,4 @@ with sr.Microphone(device_index=0) as mic:
 
         while True:
 
-                DAISE_()
+                DEISE_()
