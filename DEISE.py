@@ -131,6 +131,7 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            #Descobrir o modelo de URL do Google Imagens e arrumar essa parte do código comentada para conseguir abrir imagens  
             '''
             if pesquisa1[0] == "pesquisar" and pesquisa1[1] == "imagem":
 
