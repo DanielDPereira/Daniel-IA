@@ -37,6 +37,8 @@ def DEISE_():
         audio = rec.listen(mic)
         
         try:
+
+            #texto = "<teste>"
             
             texto = rec.recognize_google(audio, language="pt-BR")
 
