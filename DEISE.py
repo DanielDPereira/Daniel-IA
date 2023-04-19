@@ -28,7 +28,6 @@ engine.stop()
 
 def DEISE_():
 
-
         #print("Pode falar que eu vou gravar")
 
         print("...")
