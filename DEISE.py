@@ -151,11 +151,10 @@ def DEISE_():
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
                 engine.runAndWait()
                 engine.stop()
+
+                exit()
                 
                 os.system("shutdown /s /t 1")
-
-
-            exit()
                 
         except Exception as e:
             return "None"
