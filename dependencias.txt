@@ -3,3 +3,6 @@ pyttsx3
 art
 os
 time
+datetime
+keyboard
+psutil
