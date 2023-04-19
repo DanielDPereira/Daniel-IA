@@ -143,10 +143,12 @@ def DAISE_():
         except Exception as e:
             return "None"
 
-while True:
     
-    rec = sr.Recognizer()
-    #print(sr.Microphone().list_microphone_names())
-    with sr.Microphone(device_index=0) as mic:
+rec = sr.Recognizer()
+#print(sr.Microphone().list_microphone_names())
+with sr.Microphone(device_index=0) as mic:
         rec.adjust_for_ambient_noise(mic)
-        DAISE_()
+
+        while True:
+
+                DAISE_()
