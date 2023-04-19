@@ -111,10 +111,11 @@ def DEISE_():
 
                 pesquisa2 = "+".join(pesquisa1)
 
-                pesquisa_img = pesquisa2 
-                
-                os.system(f"start https://www.google.com.br/search?q={pesquisa_img}&hl=pt-PT&authuser=0&tbm=isch&sxsrf=APwXEdf9Yrp3qrP3T0qfiPVe8QXkYrxwcg%3A1681901722200&source=hp&biw=1366&bih=663&ei=msg_ZJ6vCrSJ1sQP3veJwAM&iflsig=AOEireoAAAAAZD_WqrbxVfUsC4H5L4O4XilGz7YWVJ9y&ved=0ahUKEwie5MmV5LX-AhW0hJUCHd57AjgQ4dUDCAc&uact=5&oq={pesquisa_img}&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6BAgjECdQ_wZYmRJg5BVoAXAAeACAAWyIAbYEkgEDNC4ymAEAoAEBqgELZ3dzLXdpei1pbWewAQo&sclient=img")
+                pesquisa_img = pesquisa2
 
+                url_img = f"https://www.google.com.br/search?q={pesquisa_img}&hl=pt-PT&authuser=0&tbm=isch&sxsrf=APwXEdf9Yrp3qrP3T0qfiPVe8QXkYrxwcg%3A1681901722200&source=hp&biw=1366&bih=663&ei=msg_ZJ6vCrSJ1sQP3veJwAM&iflsig=AOEireoAAAAAZD_WqrbxVfUsC4H5L4O4XilGz7YWVJ9y&ved=0ahUKEwie5MmV5LX-AhW0hJUCHd57AjgQ4dUDCAc&uact=5&oq={pesquisa_img}&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6BAgjECdQ_wZYmRJg5BVoAXAAeACAAWyIAbYEkgEDNC4ymAEAoAEBqgELZ3dzLXdpei1pbWewAQo&sclient=img"
+                
+                os.system(f"start {url_img}")
 
             elif pesquisa1[0] == "pesquisar" or pesquisa1[0] == "search":
 
@@ -150,9 +151,11 @@ def DEISE_():
 
                 pesquisa2 = "+".join(pesquisa1)
 
-                pesquisa_img = pesquisa2 
+                pesquisa_img = pesquisa2
+
+                url_img = f"https://www.google.com.br/search?q={pesquisa_img}&hl=pt-PT&authuser=0&tbm=isch&sxsrf=APwXEdf9Yrp3qrP3T0qfiPVe8QXkYrxwcg%3A1681901722200&source=hp&biw=1366&bih=663&ei=msg_ZJ6vCrSJ1sQP3veJwAM&iflsig=AOEireoAAAAAZD_WqrbxVfUsC4H5L4O4XilGz7YWVJ9y&ved=0ahUKEwie5MmV5LX-AhW0hJUCHd57AjgQ4dUDCAc&uact=5&oq={pesquisa_img}&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6BAgjECdQ_wZYmRJg5BVoAXAAeACAAWyIAbYEkgEDNC4ymAEAoAEBqgELZ3dzLXdpei1pbWewAQo&sclient=img"
                 
-                os.system(f"start https://www.google.com.br/search?q={pesquisa_img}&hl=pt-PT&authuser=0&tbm=isch&sxsrf=APwXEdf9Yrp3qrP3T0qfiPVe8QXkYrxwcg%3A1681901722200&source=hp&biw=1366&bih=663&ei=msg_ZJ6vCrSJ1sQP3veJwAM&iflsig=AOEireoAAAAAZD_WqrbxVfUsC4H5L4O4XilGz7YWVJ9y&ved=0ahUKEwie5MmV5LX-AhW0hJUCHd57AjgQ4dUDCAc&uact=5&oq={pesquisa_img}&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6BAgjECdQ_wZYmRJg5BVoAXAAeACAAWyIAbYEkgEDNC4ymAEAoAEBqgELZ3dzLXdpei1pbWewAQo&sclient=img")
+                os.system(f"start {url_img}")
 
             if texto == "encerrar o expediente":
 
