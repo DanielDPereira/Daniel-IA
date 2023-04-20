@@ -151,7 +151,6 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
-                exit()
                 
                 os.system("shutdown /s /t 1")
                 
