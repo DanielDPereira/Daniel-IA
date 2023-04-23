@@ -101,6 +101,13 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            if texto == "abrir visual studio code" or texto == "abrir o visual studio code":
+                os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+
+                engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()                
+
             pesquisa1 = texto.split()
 
             #Descobrir o modelo de URL do Google Imagens e arrumar essa parte do código comentada para conseguir abrir 
