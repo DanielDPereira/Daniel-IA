@@ -151,6 +151,9 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            if texto == "#":
+                time.sleep(1)
+
 
             if texto == "encerrar o expediente":
 
