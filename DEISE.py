@@ -46,10 +46,14 @@ def DEISE_():
             texto = texto.lower()
 
             if texto == "descansar":
+
+                time.sleep(1)    
                 
                 engine.say(f"Até a próxima {UserName}, precisando, é só me chamar")
                 engine.runAndWait()
                 engine.stop()
+
+                time.sleep(1)
                 
                 exit()
 
