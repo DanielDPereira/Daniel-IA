@@ -104,7 +104,7 @@ def DEISE_():
             if texto == "abrir visual studio code" or texto == "abrir o visual studio code":
                 os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 
-                engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
+                engine.say(f"Programa Visual Studio Code aberto, conforme as suas ordens {UserName}")
                 engine.runAndWait()
                 engine.stop()                
 
