@@ -57,7 +57,7 @@ def DEISE_():
                 
                 exit()
 
-            if texto == "olá" or texto == "oi":
+            if texto == "olá" or texto == "oi" or texto == "oi deise":
                 
                 engine.say(f"Olá {UserName}, seja bem vindo!")
                 engine.runAndWait()
