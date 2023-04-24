@@ -45,7 +45,7 @@ def DEISE_():
 
             texto = texto.lower()
 
-            if texto == "descansar" or texto == "Descansar":
+            if texto == "descansar":
                 
                 engine.say(f"Até a próxima {UserName}, precisando, é só me chamar")
                 engine.runAndWait()
