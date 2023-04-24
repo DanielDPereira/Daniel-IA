@@ -163,9 +163,6 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
-
-
-
             if texto == "encerrar o expediente" or texto == "encerrar expediente":
 
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
