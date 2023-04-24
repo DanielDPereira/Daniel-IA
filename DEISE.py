@@ -26,7 +26,6 @@ engine.stop()
 
 def DEISE_():
 
-
         print("...")
 
         time.sleep(0.3)
@@ -168,13 +167,11 @@ def DEISE_():
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
                 engine.runAndWait()
                 engine.stop()
-
                 
                 os.system("shutdown /s /t 1")
                 
         except Exception as e:
             return "None"
-
     
 rec = sr.Recognizer()
 #print(sr.Microphone().list_microphone_names())
