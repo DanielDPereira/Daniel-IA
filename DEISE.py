@@ -45,6 +45,14 @@ def DEISE_():
 
             texto = texto.lower()
 
+            if texto == "descansar" or texto == "Descansar":
+                
+                engine.say(f"Até a próxima {UserName}, precisando, é só me chamar")
+                engine.runAndWait()
+                engine.stop()
+                
+                exit()
+
             if texto == "olá" or texto == "oi":
                 
                 engine.say(f"Olá {UserName}, seja bem vindo!")
@@ -151,17 +159,7 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
-            if texto == "descansar":
 
-                time.sleep(1)
-                
-                engine.say(f"Até a próxima {UserName}, precisando, é só me chamar")
-                engine.runAndWait()
-                engine.stop()
-
-                time.sleep(1)
-                
-                exit()
 
 
             if texto == "encerrar o expediente" or texto == "encerrar expediente":
