@@ -155,7 +155,7 @@ def DEISE_():
                 time.sleep(1)
 
 
-            if texto == "encerrar o expediente":
+            if texto == "encerrar o expediente" or texto == "encerrar expediente":
 
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
                 engine.runAndWait()
