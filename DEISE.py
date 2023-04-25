@@ -74,7 +74,7 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
-            if texto == "status da bateria" or texto == "deise qual o status da bateria":
+            if texto == "status da bateria" or texto == "deise qual o status da bateria" or texto == "deise qual é o status da bateria":
                 
                 bateria = psutil.sensors_battery()
                 percentual_bateria = str(bateria.percent)
