@@ -36,7 +36,9 @@ def DEISE_():
 
             #texto = "<teste>"
             
-            texto = rec.recognize_google(audio, language="pt-BR")
+            fala_entrada = rec.recognize_google(audio, language="pt-BR")
+
+            texto = fala_entrada
 
             texto = texto.capitalize()
             print("O senhor(a) disse:")
