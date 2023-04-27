@@ -164,6 +164,16 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
+            if texto == "limpar registros":
+
+                os.system("cls")
+
+                engine.say(f"Registros limpados com sucesso {UserName}!")
+                engine.runAndWait()
+                engine.stop()
+
+                tprint("Welcome   Mr.   Daniel")
+
             if texto == "encerrar o expediente" or texto == "encerrar expediente":
 
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
