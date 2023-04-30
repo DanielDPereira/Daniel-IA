@@ -66,7 +66,7 @@ def DEISE_():
 
             if texto == "quem é você":
                 
-                engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Especial do Daniel e existo para ajudá-lo!")
+                engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Espetacular do Daniel e existo para ajudá-lo!")
                 engine.runAndWait()
                 engine.stop()
 
