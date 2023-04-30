@@ -180,6 +180,8 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
                 
+                time.sleep(3)
+                
                 os.system("shutdown /s /t 1")
                 
         except Exception as e:
