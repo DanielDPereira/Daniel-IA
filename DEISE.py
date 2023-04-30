@@ -7,7 +7,7 @@ import datetime
 import keyboard as kb
 import psutil
 
-SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Especial
+SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Espetacular
 UserName = "Senhor Daniel"
 
 print("Loading DEISE system...")
