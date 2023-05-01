@@ -98,7 +98,7 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
-            if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome":
+            if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
                 os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
                 engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
