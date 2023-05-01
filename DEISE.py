@@ -97,6 +97,10 @@ def DEISE_():
                 engine.say(f"Agora são {hora} {UserName}")
                 engine.runAndWait()
                 engine.stop()
+                
+            '''
+            if texto == "vamos jogar":
+            '''    
 
             if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
                 os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
