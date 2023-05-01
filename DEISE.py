@@ -7,7 +7,7 @@ import datetime
 import keyboard as kb
 import psutil
 
-SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Especial
+SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Espetacular
 UserName = "Senhor Daniel"
 
 print("Loading DEISE system...")
@@ -66,7 +66,7 @@ def DEISE_():
 
             if texto == "quem é você":
                 
-                engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Especial do Daniel e existo para ajudá-lo!")
+                engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Espetacular do Daniel e existo para ajudá-lo!")
                 engine.runAndWait()
                 engine.stop()
 
@@ -179,6 +179,8 @@ def DEISE_():
                 engine.say(f"Desligando o sistema, até a próxima {UserName}")
                 engine.runAndWait()
                 engine.stop()
+                
+                time.sleep(3)
                 
                 os.system("shutdown /s /t 1")
                 
