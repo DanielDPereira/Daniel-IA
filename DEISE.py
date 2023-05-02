@@ -97,8 +97,9 @@ def DEISE_():
                 engine.say(f"Agora são {hora} {UserName}")
                 engine.runAndWait()
                 engine.stop()
-                
             '''
+            def TabelaJogos():
+                
             if texto == "vamos jogar":
 
                 engine.say(f"{UserName}, qual jogo gostaria de jogar? Insira um valor numérico conforme a tabela a seguir")
