@@ -22,7 +22,15 @@ tprint("Welcome   Mr.   Daniel")
 
 engine.say(f"Olá {UserName}! Eu sou a {SysName}, seja bem vindo!")
 engine.runAndWait()
-engine.stop()        
+engine.stop()
+
+#Funções
+
+def TabelaJogos():
+        print("Jogo\t\tNúmero")
+        print("--------------------")
+        print("%s:\t\t\t%f" % "Brawlhalla", "1")
+        print("--------------------")
 
 def DEISE_():
 
@@ -99,11 +107,7 @@ def DEISE_():
                 engine.stop()
                 
             
-            def TabelaJogos():
-                 print("Jogo\t\tNúmero")
-                 print("--------------------")
-                 print("%s:\t\t\t%f" % "Brawlhalla", "1")
-                 print("--------------------")
+
                 
             if texto == "vamos jogar":
 
