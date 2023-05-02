@@ -100,6 +100,10 @@ def DEISE_():
                 
             '''
             def TabelaJogos():
+                 print("Jogo\t\tNúmero")
+                 print("--------------------")
+                 print("%s:\t\t\t%f" % "Brawlhalla", "1")
+                 print("--------------------")
                 
             if texto == "vamos jogar":
 
