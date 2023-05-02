@@ -33,12 +33,12 @@ def DEISE_():
         audio = rec.listen(mic)
         
         try:
-
-            #texto = "<teste>"
             
             fala_entrada = rec.recognize_google(audio, language="pt-BR")
 
             texto = fala_entrada
+
+            #texto = "<teste>"
 
             texto = texto.capitalize()
             print("O senhor(a) disse:")
