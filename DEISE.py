@@ -97,6 +97,7 @@ def DEISE_():
                 engine.say(f"Agora são {hora} {UserName}")
                 engine.runAndWait()
                 engine.stop()
+                
             '''
             def TabelaJogos():
                 
