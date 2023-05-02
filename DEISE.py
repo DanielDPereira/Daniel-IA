@@ -31,6 +31,7 @@ def TabelaJogos():
         print(30*"-")
         print("Brawlhalla\t\t1")
         print("Minecraft\t\t2")
+        print("Valorant\t\t3")
         #print("%s:\t\t\t%f" % "Minecraft", "2")
         print(30*"-")
 
