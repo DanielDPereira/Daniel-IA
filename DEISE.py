@@ -100,6 +100,10 @@ def DEISE_():
                 
             '''
             if texto == "vamos jogar":
+
+                engine.say(f"{UserName}, qual jogo gostaria de jogar? Insira um valor numérico conforme a tabela a seguir")
+                engine.runAndWait()
+                engine.stop()
             '''    
 
             if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
