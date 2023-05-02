@@ -28,9 +28,9 @@ engine.stop()
 
 def TabelaJogos():
         print("Jogo\t\tNúmero")
-        print("--------------------")
+        print(30*"-")
         print("%s:\t\t\t%f" % "Brawlhalla", "1")
-        print("--------------------")
+        print(30*"-")
 
 def DEISE_():
 
