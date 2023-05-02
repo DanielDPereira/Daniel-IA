@@ -30,7 +30,7 @@ def TabelaJogos():
         print("Jogo\t\tNúmero")
         print(30*"-")
         print("Brawlhalla\t\t1")
-        print("%s:\t\t\t%f" % "Minecraft", "2")
+        #print("%s:\t\t\t%f" % "Minecraft", "2")
         print(30*"-")
 
 def DEISE_():
