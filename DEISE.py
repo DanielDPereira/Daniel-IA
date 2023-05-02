@@ -105,7 +105,7 @@ def DEISE_():
                  print("%s:\t\t\t%f" % "Brawlhalla", "1")
                  print("--------------------")
 
-            def TabelaJogos()    
+            TabelaJogos()    
                 
             if texto == "vamos jogar":
 
