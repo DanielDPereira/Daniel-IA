@@ -98,21 +98,20 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
                 
-            '''
+            
             def TabelaJogos():
                  print("Jogo\t\tNúmero")
                  print("--------------------")
                  print("%s:\t\t\t%f" % "Brawlhalla", "1")
                  print("--------------------")
-
-            TabelaJogos()    
                 
             if texto == "vamos jogar":
 
                 engine.say(f"{UserName}, qual jogo gostaria de jogar? Insira um valor numérico conforme a tabela a seguir")
                 engine.runAndWait()
                 engine.stop()
-            '''    
+
+                TabelaJogos()
 
             if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
                 os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
