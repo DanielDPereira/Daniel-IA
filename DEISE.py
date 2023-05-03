@@ -117,6 +117,8 @@ def DEISE_():
 
                 TabelaJogos()
 
+                jogo = int(input())
+
             if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
                 os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
