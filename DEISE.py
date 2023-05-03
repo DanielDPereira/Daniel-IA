@@ -125,6 +125,7 @@ def DEISE_():
                     os.startfile(r"C:\Users\danip\AppData\Roaming\.minecraft\TLauncher.exe")
                 if jogo == 3:
                     os.startfile(r"C:\Riot Games\Riot Client\RiotClientServices.exe --launch-product=valorant --launch-patchline=live")
+                    print("Iniciando Valorant...")
                     
 
             if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
