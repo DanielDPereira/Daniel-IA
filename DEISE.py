@@ -49,7 +49,7 @@ def DEISE_():
 
             texto = fala_entrada
 
-            #texto = "<teste>"
+            #texto = "texto"
 
             texto = texto.capitalize()
             print("O senhor(a) disse:")
