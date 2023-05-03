@@ -122,7 +122,10 @@ def DEISE_():
                 if jogo == 1:
                     os.startfile(r"steam://rungameid/291550")
                 if jogo == 2:
-                    os.startfile(r"C:\Users\danip\AppData\Roaming\.minecraft\TLauncher.exe")    
+                    os.startfile(r"C:\Users\danip\AppData\Roaming\.minecraft\TLauncher.exe")
+                if jogo == 3:
+                    os.startfile(r"C:\Riot Games\Riot Client\RiotClientServices.exe --launch-product=valorant --launch-patchline=live")
+                    
 
             if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
                 os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
