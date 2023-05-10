@@ -123,6 +123,11 @@ def DEISE_():
             if jogo == 1:
                 os.startfile(r"steam://rungameid/291550")
                 print("Iniciando Brawlhalla...")
+
+                engine.say(f"{UserName} o jogo Brawlhalla está iniciado")
+                engine.runAndWait()
+                engine.stop()
+            
             if jogo == 2:
                 os.startfile(r"C:\Users\danip\AppData\Roaming\.minecraft\TLauncher.exe")
                 print("Iniciando Minecraft...")
