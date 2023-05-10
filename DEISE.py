@@ -20,9 +20,10 @@ engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female v
 
 tprint("Welcome   Mr.   Daniel")
 
-engine.say(f"Olá {UserName}! seja bem vindo!")
+engine.say(f"Olá {UserName}! Eu sou a {SysName}, seja bem vindo!")
 engine.runAndWait()
 engine.stop()
+
 
 #Funções
 
@@ -216,114 +217,8 @@ def DEISE_():
             
             os.system("shutdown /s /t 1")
                 
-<<<<<<< Updated upstream
     except Exception as e:
         return "None"
-=======
-                engine.say(f"{UserName}, o sistema está com um total de {percentual_bateria}% de bateria!")
-                engine.runAndWait()
-                engine.stop()
-
-            if texto == "que horas são":
-
-                hora = datetime.datetime.now()
-
-                hora = str(hora).split()
-                hora = hora[1]
-                hora = hora.split(":")
-                hora = hora[0] + " horas e " + hora[1] + " minutos"
-                
-                engine.say(f"Agora são {hora} {UserName}")
-                engine.runAndWait()
-                engine.stop()
-
-            if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome" or texto == "abrir google chrome":
-                os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
-
-                engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
-                engine.runAndWait()
-                engine.stop()
-
-                #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
-
-            if texto == "abrir spotify" or texto == "abrir o spotify":
-                os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
-
-                engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
-                engine.runAndWait()
-                engine.stop()
-
-            if texto == "abrir visual studio code" or texto == "abrir o visual studio code":
-                os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
-
-                engine.say(f"Programa Visual Studio Code aberto, conforme as suas ordens {UserName}")
-                engine.runAndWait()
-                engine.stop()                
-
-            pesquisa1 = texto.split()
-
-            #Descobrir o modelo de URL do Google Imagens e arrumar essa parte do código comentada para conseguir abrir 
-            if pesquisa1[0] == "pesquisar" and pesquisa1[1] == "imagem":
-
-                pesquisa1.pop(0)
-                pesquisa1.pop(1)
-
-                pesquisa2 = "+".join(pesquisa1)
-
-                pesquisa_img = pesquisa2
-
-                url_img = r"https://www.google.com/search?tbm=isch&q="+str(pesquisa_img)
-                
-                os.system(f"start {url_img}")
-
-            if pesquisa1[0] == "pesquisar" or pesquisa1[0] == "search":
-
-                pesquisa1.pop(0)
-
-                pesquisa2 = "+".join(pesquisa1) 
-
-                url = "https://www.google.com/search?q="+str(pesquisa2)
-
-                os.system(f'start {url}')
-
-                engine.say(f"{UserName}, pesquisa {pesquisa1} aberta com sucesso!")
-                engine.runAndWait()
-                engine.stop()
-
-            if pesquisa1[0] == "abrir" and pesquisa1[1] == "site" or pesquisa1[1] == "url":
-
-                pesquisa1.pop(0)
-                pesquisa1.pop(0)
-
-                url = pesquisa1[0]
-
-                os.system(f"start https://www.{url}")
-
-                engine.say(f"{UserName}, o site {pesquisa1} foi aberto com sucesso!")
-                engine.runAndWait()
-                engine.stop()
-
-            if texto == "limpar registros":
-
-                os.system("cls")
-
-                engine.say(f"Registros limpados com sucesso {UserName}!")
-                engine.runAndWait()
-                engine.stop()
-
-                tprint("Welcome   Mr.   Daniel")
-
-            if texto == "encerrar o expediente" or texto == "encerrar expediente":
-
-                engine.say(f"Desligando o sistema, até a próxima {UserName}")
-                engine.runAndWait()
-                engine.stop()
-                
-                os.system("shutdown /s /t 1")
-                
-        except Exception as e:
-            return "None"
->>>>>>> Stashed changes
     
 rec = sr.Recognizer()
 #print(sr.Microphone().list_microphone_names())
