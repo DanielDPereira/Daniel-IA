@@ -217,7 +217,6 @@ def DEISE_():
             
             os.system("shutdown /s /t 1")
 
-                
     except Exception as e:
         return "None"
     
