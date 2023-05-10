@@ -124,13 +124,18 @@ def DEISE_():
                 os.startfile(r"steam://rungameid/291550")
                 print("Iniciando Brawlhalla...")
 
-                engine.say(f"{UserName} o jogo Brawlhalla está iniciado")
+                engine.say(f"{UserName} o jogo Brawlhalla está sendo iniciado")
                 engine.runAndWait()
                 engine.stop()
             
             if jogo == 2:
                 os.startfile(r"C:\Users\danip\AppData\Roaming\.minecraft\TLauncher.exe")
                 print("Iniciando Minecraft...")
+
+                engine.say(f"{UserName} o jogo Minecraft está sendo iniciado")
+                engine.runAndWait()
+                engine.stop()
+                
             if jogo == 3:
                 os.startfile(r"C:\Riot Games\Riot Client\RiotClientServices.exe --launch-product=valorant --launch-patchline=live")
                 print("Iniciando Valorant...")
