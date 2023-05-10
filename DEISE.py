@@ -20,7 +20,7 @@ engine.setProperty('voice', voice[0].id) #changing voice to index 1 for female v
 
 tprint("Welcome   Mr.   Daniel")
 
-engine.say(f"Olá {UserName}! Eu sou a {SysName}, seja bem vindo!")
+engine.say(f"Olá {UserName}! seja bem vindo!")
 engine.runAndWait()
 engine.stop()
 
