@@ -49,10 +49,12 @@ def DEISE_():
         fala_entrada = rec.recognize_google(audio, language="pt-BR")
 
         texto = fala_entrada
-
-        #texto = "texto"
-
+        
+        texto = "<teste>"
+        
         texto = texto.capitalize()
+        texto_list = texto.split(" ")
+        
         print("O senhor(a) disse:")
         print(texto)
 
