@@ -50,7 +50,7 @@ def DEISE_():
 
         texto = fala_entrada
         
-        texto = "<teste>"
+        #texto = "<teste>"
         
         texto = texto.capitalize()
         texto_list = texto.split(" ")
