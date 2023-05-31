@@ -53,12 +53,14 @@ def DEISE_():
         #texto = "<teste>"
         
         texto = texto.capitalize()
-        texto_list = texto.split(" ")
         
         print("O senhor(a) disse:")
         print(texto)
 
         texto = texto.lower()
+        
+        texto_list = texto.split(" ")
+        print(texto_list)
 
         if texto == "descansar":
 
@@ -147,7 +149,7 @@ def DEISE_():
                 engine.stop()
                 
 
-        if texto == "abrir google" or texto == "abrir o google" or texto == "abrir o chrome" or texto == "abrir chrome":
+        if "abrir" or "inciar "and "google" in texto_list:
             os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
             engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
