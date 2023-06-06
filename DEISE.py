@@ -25,7 +25,6 @@ engine.say(f"Olá {UserName}! Seja bem vindo!")
 engine.runAndWait()
 engine.stop()
 
-
 #Funções que podem ser usadas no programa
 
 def TabelaJogos():
