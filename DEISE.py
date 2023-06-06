@@ -180,7 +180,7 @@ def DEISE_():
                 
             exit()
 
-        if texto == "olá" or texto == "oi" or texto == "oi deise":
+        if "olá" in texto_list or "oi" in texto_list or len(texto_list) == 1 and texto_list[0] == "deise":
                 
             engine.say(f"Olá {UserName}, estou aqui para ajudar, precisando de algo é só pedir!")
             engine.runAndWait()
