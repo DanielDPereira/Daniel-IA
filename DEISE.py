@@ -26,7 +26,7 @@ engine.runAndWait()
 engine.stop()
 
 
-#Funções
+#Funções que podem ser usadas no programa
 
 def TabelaJogos():
     print("Jogo\t\tNúmero")
@@ -280,20 +280,6 @@ def DEISE_():
             engine.stop()                
 
         pesquisa1 = texto.split()
-
-        #Descobrir o modelo de URL do Google Imagens e arrumar essa parte do código comentada para conseguir abrir 
-        if pesquisa1[0] == "pesquisar" and pesquisa1[1] == "imagem":
-
-            pesquisa1.pop(0)
-            pesquisa1.pop(1)
-
-            pesquisa2 = "+".join(pesquisa1)
-
-            pesquisa_img = pesquisa2
-
-            url_img = r"https://www.google.com/search?tbm=isch&q="+str(pesquisa_img)
-            
-            os.system(f"start {url_img}")
 
         if pesquisa1[0] == "pesquisar" or pesquisa1[0] == "search":
 
