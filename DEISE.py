@@ -154,21 +154,21 @@ def DEISE_():
             
         fala_entrada = rec.recognize_google(audio, language="pt-BR")
 
-        entrada = fala_entrada
+        texto_entrada = fala_entrada
         
-        #entrada = "<teste>"
+        #texto_entrada = "<teste>"
         
-        entrada = entrada.capitalize()
+        texto_entrada = texto_entrada.capitalize()
         
         print("O senhor(a) disse:")
-        print(entrada)
+        print(texto_entrada)
 
-        entrada = entrada.lower()
+        texto_entrada = texto_entrada.lower()
         
-        texto_list = entrada.split(" ")
+        texto_list = texto_entrada.split(" ")
         print(texto_list)
 
-        if entrada == "descansar":
+        if texto_entrada == "descansar":
 
             time.sleep(1)    
                 
@@ -186,19 +186,19 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if entrada == "quem é você":
+        if texto_entrada == "quem é você":
                 
                 engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Espetacular do Daniel e existo para ajudá-lo!")
                 engine.runAndWait()
                 engine.stop()
 
-        if entrada == "alpha" or entrada == "alfa":
+        if texto_entrada == "alpha" or texto_entrada == "alfa":
 
             engine.say("BOTS!!!")
             engine.runAndWait()
             engine.stop()
 
-        if entrada == "status da bateria" or entrada == "deise qual o status da bateria" or entrada == "deise qual é o status da bateria":
+        if texto_entrada == "status da bateria" or texto_entrada == "deise qual o status da bateria" or texto_entrada == "deise qual é o status da bateria":
             
             bateria = psutil.sensors_battery()
             percentual_bateria = str(bateria.percent)
@@ -207,7 +207,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if entrada == "que horas são":
+        if texto_entrada == "que horas são":
 
             hora = datetime.datetime.now()
 
@@ -220,7 +220,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
             
-        if entrada == "vamos jogar":
+        if texto_entrada == "vamos jogar":
 
             engine.say(f"{UserName}, qual jogo gostaria de jogar? Insira um valor numérico conforme a tabela a seguir")
             engine.runAndWait()
@@ -264,21 +264,21 @@ def DEISE_():
 
             #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
-        if "abrir" or "executar" or "iniciar" in texto_list and "spotify" in texto_list or entrada == "abrir o spotify":
+        if "abrir" or "executar" or "iniciar" in texto_list and "spotify" in texto_list or texto_entrada == "abrir o spotify":
             os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
             engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
             engine.runAndWait()
             engine.stop()
 
-        if entrada == "abrir visual studio code" or entrada == "abrir o visual studio code":
+        if texto_entrada == "abrir visual studio code" or texto_entrada == "abrir o visual studio code":
             os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 
             engine.say(f"Programa Visual Studio Code aberto, conforme as suas ordens {UserName}")
             engine.runAndWait()
             engine.stop()                
 
-        pesquisa1 = entrada.split()
+        pesquisa1 = texto_entrada.split()
 
         if pesquisa1[0] == "pesquisar" or pesquisa1[0] == "search":
 
@@ -307,7 +307,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if entrada == "limpar registros":
+        if texto_entrada == "limpar registros":
 
             os.system("cls")
 
@@ -317,7 +317,7 @@ def DEISE_():
 
             tprint("Welcome   Mr.   Daniel")
 
-        if entrada == "encerrar o expediente" or entrada == "encerrar expediente":
+        if texto_entrada == "encerrar o expediente" or texto_entrada == "encerrar expediente":
 
             engine.say(f"Desligando o sistema, até a próxima {UserName}")
             engine.runAndWait()
