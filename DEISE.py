@@ -165,8 +165,8 @@ def DEISE_():
 
         texto_entrada = texto_entrada.lower()
         
-        texto_list = texto_entrada.split(" ")
-        print(texto_list)
+        entrada_lista = texto_entrada.split(" ")
+        print(entrada_lista)
 
         if texto_entrada == "descansar":
 
@@ -180,7 +180,7 @@ def DEISE_():
                 
             exit()
 
-        if "olá" in texto_list or "oi" in texto_list or len(texto_list) == 1 and texto_list[0] == "deise":
+        if "olá" in entrada_lista or "oi" in entrada_lista or len(entrada_lista) == 1 and entrada_lista[0] == "deise":
                 
             engine.say(f"Olá {UserName}, estou aqui para ajudar, precisando de algo é só pedir!")
             engine.runAndWait()
@@ -255,7 +255,7 @@ def DEISE_():
                 engine.stop()
                 
 
-        if "abrir" or "inciar "and "google" in texto_list:
+        if "abrir" or "inciar "and "google" in entrada_lista:
             os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
             engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
@@ -264,7 +264,7 @@ def DEISE_():
 
             #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
-        if "abrir" or "executar" or "iniciar" in texto_list and "spotify" in texto_list or texto_entrada == "abrir o spotify":
+        if "abrir" or "executar" or "iniciar" in entrada_lista and "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
             os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
             engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
