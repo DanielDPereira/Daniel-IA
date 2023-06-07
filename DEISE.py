@@ -306,6 +306,12 @@ def DEISE_():
             engine.say(f"{UserName}, o site {pesquisa1} foi aberto com sucesso!")
             engine.runAndWait()
             engine.stop()
+            
+        if "obrigado" or "valeu" in entrada_lista:
+            
+            engine.say(f"Por nada {UserName}, precisando é só me chamar")
+            engine.runAndWait()
+            engine.stop()
 
         if texto_entrada == "limpar registros":
 
