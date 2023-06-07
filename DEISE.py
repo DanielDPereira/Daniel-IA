@@ -245,7 +245,8 @@ def DEISE_():
                 engine.say(f"{UserName} o jogo Minecraft está sendo iniciado")
                 engine.runAndWait()
                 engine.stop()
-                
+            
+            '''   
             if jogo == 3:
                 os.startfile(r"C:\Riot Games\Riot Client\RiotClientServices.exe --launch-product=valorant --launch-patchline=live")
                 print("Iniciando Valorant...")
@@ -253,7 +254,8 @@ def DEISE_():
                 engine.say(f"{UserName} o jogo Valorant está sendo iniciado")
                 engine.runAndWait()
                 engine.stop()
-        
+            '''
+             
         if "abrir" or "inciar" and "calculadora" in entrada_lista:
             
             calculadora()
