@@ -253,7 +253,14 @@ def DEISE_():
                 engine.say(f"{UserName} o jogo Valorant está sendo iniciado")
                 engine.runAndWait()
                 engine.stop()
-                
+        
+        if "abrir" or "inciar" and "calculadora" in entrada_lista:
+            
+            calculadora()
+
+            engine.say(f"Calculadora aberta, conforme as suas ordens {UserName}")
+            engine.runAndWait()
+            engine.stop()
 
         if "abrir" or "inciar "and "google" in entrada_lista:
             os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
