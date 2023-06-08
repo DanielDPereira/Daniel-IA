@@ -256,7 +256,7 @@ def DEISE_():
                 engine.stop()
             '''
              
-        elif "abrir" or "inciar" in entrada_lista and "calculadora" in entrada_lista:
+        elif "abrir" in entrada_lista or "inciar" in entrada_lista and "calculadora" in entrada_lista:
             
             calculadora()
 
