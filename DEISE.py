@@ -256,7 +256,7 @@ def DEISE_():
                 engine.stop()
             '''
              
-        if "abrir" or "inciar" and "calculadora" in entrada_lista:
+        if "abrir" or "inciar" in entrada_lista and "calculadora" in entrada_lista:
             
             calculadora()
 
@@ -264,7 +264,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if "abrir" or "inciar "and "google" in entrada_lista:
+        if "abrir" in entrada_lista or "inciar" in entrada_lista and "google" in entrada_lista:
             os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
             engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
