@@ -180,25 +180,25 @@ def DEISE_():
                 
             exit()
 
-        if "olá" in entrada_lista or "oi" in entrada_lista or len(entrada_lista) == 1 and entrada_lista[0] == "deise":
+        elif "olá" in entrada_lista or "oi" in entrada_lista or len(entrada_lista) == 1 and entrada_lista[0] == "deise":
                 
             engine.say(f"Olá {UserName}, estou aqui para ajudar, precisando de algo é só pedir!")
             engine.runAndWait()
             engine.stop()
 
-        if texto_entrada == "quem é você":
+        elif texto_entrada == "quem é você":
                 
                 engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Espetacular do Daniel e existo para ajudá-lo!")
                 engine.runAndWait()
                 engine.stop()
 
-        if texto_entrada == "alpha" or texto_entrada == "alfa":
+        elif texto_entrada == "alpha" or texto_entrada == "alfa":
 
             engine.say("BOTS!!!")
             engine.runAndWait()
             engine.stop()
 
-        if "status" and "bateria" in entrada_lista:
+        elif "status" and "bateria" in entrada_lista:
             
             bateria = psutil.sensors_battery()
             percentual_bateria = str(bateria.percent)
@@ -207,7 +207,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if texto_entrada == "que horas são":
+        elif texto_entrada == "que horas são":
 
             hora = datetime.datetime.now()
 
@@ -220,7 +220,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
             
-        if texto_entrada == "vamos jogar":
+        elif texto_entrada == "vamos jogar":
 
             engine.say(f"{UserName}, qual jogo gostaria de jogar? Insira um valor numérico conforme a tabela a seguir")
             engine.runAndWait()
@@ -238,7 +238,7 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
             
-            if jogo == 2:
+            elif jogo == 2:
                 os.startfile(r"C:\Users\danip\AppData\Roaming\.minecraft\TLauncher.exe")
                 print("Iniciando Minecraft...")
 
@@ -247,7 +247,7 @@ def DEISE_():
                 engine.stop()
             
             '''   
-            if jogo == 3:
+            elif jogo == 3:
                 os.startfile(r"C:\Riot Games\Riot Client\RiotClientServices.exe --launch-product=valorant --launch-patchline=live")
                 print("Iniciando Valorant...")
 
@@ -256,7 +256,7 @@ def DEISE_():
                 engine.stop()
             '''
              
-        if "abrir" or "inciar" in entrada_lista and "calculadora" in entrada_lista:
+        elif "abrir" or "inciar" in entrada_lista and "calculadora" in entrada_lista:
             
             calculadora()
 
@@ -264,7 +264,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if "abrir" in entrada_lista or "inciar" in entrada_lista and "google" in entrada_lista:
+        elif "abrir" in entrada_lista or "inciar" in entrada_lista and "google" in entrada_lista:
             os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
             engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
@@ -273,14 +273,14 @@ def DEISE_():
 
             #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
-        if "abrir" or "executar" or "iniciar" in entrada_lista and "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
+        elif "abrir" in entrada_lista or "executar" in entrada_lista or "iniciar" in entrada_lista and "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
             os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
             engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
             engine.runAndWait()
             engine.stop()
 
-        if texto_entrada == "abrir visual studio code" or texto_entrada == "abrir o visual studio code":
+        elif texto_entrada == "abrir visual studio code" or texto_entrada == "abrir o visual studio code":
             os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 
             engine.say(f"Programa Visual Studio Code aberto, conforme as suas ordens {UserName}")
@@ -303,7 +303,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
 
-        if pesquisa1[0] == "abrir" and pesquisa1[1] == "site" or pesquisa1[1] == "url":
+        elif pesquisa1[0] == "abrir" and pesquisa1[1] == "site" or pesquisa1[1] == "url":
 
             pesquisa1.pop(0)
             pesquisa1.pop(0)
@@ -316,13 +316,13 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
             
-        if "obrigado" or "valeu" in entrada_lista:
+        elif "obrigado" or "valeu" in entrada_lista:
             
             engine.say(f"Por nada {UserName}, precisando é só me chamar")
             engine.runAndWait()
             engine.stop()
 
-        if texto_entrada == "limpar registros":
+        elif texto_entrada == "limpar registros":
 
             os.system("cls")
 
@@ -332,7 +332,7 @@ def DEISE_():
 
             tprint("Welcome   Mr.   Daniel")
 
-        if texto_entrada == "encerrar o expediente" or texto_entrada == "encerrar expediente":
+        elif texto_entrada == "encerrar o expediente" or texto_entrada == "encerrar expediente":
 
             engine.say(f"Desligando o sistema, até a próxima {UserName}")
             engine.runAndWait()
