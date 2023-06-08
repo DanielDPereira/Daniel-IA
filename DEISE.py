@@ -308,7 +308,7 @@ def DEISE_():
             engine.runAndWait()
             engine.stop()
             
-        elif "obrigado" or "valeu" in entrada_lista:
+        elif "obrigado" in entrada_lista or "valeu" in entrada_lista:
             
             engine.say(f"Por nada {UserName}, precisando é só me chamar")
             engine.runAndWait()
