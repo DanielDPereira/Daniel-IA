@@ -60,7 +60,8 @@ def DEISE_():
         texto_entrada = texto_entrada.lower()
         
         entrada_lista = texto_entrada.split(" ")
-        print(entrada_lista)
+        
+        #print(entrada_lista)
 
         if texto_entrada == "descansar":
 
