@@ -160,7 +160,7 @@ def DEISE_():
 
             #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
-        elif "abrir" in entrada_lista or "executar" in entrada_lista or "iniciar" in entrada_lista and "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
+        elif "abrir" in entrada_lista or "inciar" in entrada_lista or "abra" in entrada_lista or "executar" in entrada_lista and "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
             os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
             engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
