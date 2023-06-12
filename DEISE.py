@@ -151,7 +151,7 @@ def DEISE_():
                 engine.stop()
             '''
 
-        elif "abrir" in entrada_lista or "inciar" in entrada_lista and "google" in entrada_lista:
+        elif "abrir" in entrada_lista or "inciar" in entrada_lista or "abra" in entrada_lista or "executar" in entrada_lista and "google" in entrada_lista or "chrome" in entrada_lista:
             os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
             engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
