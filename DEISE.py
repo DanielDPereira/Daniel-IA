@@ -151,28 +151,28 @@ def DEISE_():
                 engine.stop()
             '''
 
-        elif "abrir" in entrada_lista or "inciar" in entrada_lista or "abra" in entrada_lista or "executar" in entrada_lista and "google" in entrada_lista or "chrome" in entrada_lista:
-            os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
+        elif "abrir" in entrada_lista or "inciar" in entrada_lista or "abra" in entrada_lista or "executar" in entrada_lista:
 
-            engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
-            engine.runAndWait()
-            engine.stop()
+            if "google" in entrada_lista or "chrome" in entrada_lista:
+                os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
-            #"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+                engine.say(f"Programa Google Chrome aberto, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()
 
-        elif "abrir" in entrada_lista or "inciar" in entrada_lista or "abra" in entrada_lista or "executar" in entrada_lista and "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
-            os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
+            elif "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
+                os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
-            engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
-            engine.runAndWait()
-            engine.stop()
+                engine.say(f"Programa Spotify aberto, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()
 
-        elif texto_entrada == "abrir visual studio code" or texto_entrada == "abrir o visual studio code":
-            os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+            elif "visual" in entrada_lista and "studio" in entrada_lista:
+                os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 
-            engine.say(f"Programa Visual Studio Code aberto, conforme as suas ordens {UserName}")
-            engine.runAndWait()
-            engine.stop()                
+                engine.say(f"Programa Visual Studio Code aberto, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()                
 
         pesquisa1 = texto_entrada.split()
 
