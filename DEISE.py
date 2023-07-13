@@ -8,7 +8,7 @@ from tkinter import *
 import keyboard as kb
 import psutil
 
-SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Espetacular (Daniel É Inteligente Sem Esforço)
+SysName = "DEISE" #Daniel Especialista Inteligente de Serviço Espetacular #Daniel Artificial Inteligence System Integrated (Daniel É Inteligente Sem Esforço)
 UserName = "Senhor Daniel"
 
 print("Loading DEISE system...")
