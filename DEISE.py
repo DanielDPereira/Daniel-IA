@@ -156,21 +156,21 @@ def DEISE_():
             if "google" in entrada_lista or "chrome" in entrada_lista:
                 os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
 
-                engine.say(f"Programa Google Chrome aberto sucesso, conforme as suas ordens {UserName}")
+                engine.say(f"Programa Google Chrome aberto com sucesso, conforme as suas ordens {UserName}")
                 engine.runAndWait()
                 engine.stop()
 
             elif "spotify" in entrada_lista or texto_entrada == "abrir o spotify":
                 os.startfile(r"C:\Users\danip\AppData\Roaming\Spotify\Spotify.exe")
 
-                engine.say(f"Programa Spotify aberto sucesso, conforme as suas ordens {UserName}")
+                engine.say(f"Programa Spotify aberto com sucesso, conforme as suas ordens {UserName}")
                 engine.runAndWait()
                 engine.stop()
 
             elif "visual" in entrada_lista and "studio" in entrada_lista:
                 os.startfile(r"C:\Users\danip\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 
-                engine.say(f"Programa Visual Studio Code aberto sucesso, conforme as suas ordens {UserName}")
+                engine.say(f"Programa Visual Studio Code aberto com sucesso, conforme as suas ordens {UserName}")
                 engine.runAndWait()
                 engine.stop()                
 
