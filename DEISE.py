@@ -172,7 +172,14 @@ def DEISE_():
 
                 engine.say(f"Programa Visual Studio Code aberto com sucesso, conforme as suas ordens {UserName}")
                 engine.runAndWait()
-                engine.stop()                
+                engine.stop()
+
+            elif "whatsapp" in entrada_lista:
+                os.system(f'start https://web.whatsapp.com/')
+
+                engine.say(f"Whatsapp aberto com sucesso, conforme as suas ordens {UserName}")
+                engine.runAndWait()
+                engine.stop()
 
         pesquisa1 = texto_entrada.split()
 
