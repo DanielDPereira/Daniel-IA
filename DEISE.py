@@ -174,7 +174,7 @@ def DEISE_():
                 engine.runAndWait()
                 engine.stop()
 
-            elif "whatsapp" in entrada_lista:
+            elif "whatsapp" in entrada_lista or "zap" in entrada_lista and "zap" in entrada_lista:
                 os.system(f'start https://web.whatsapp.com/')
 
                 engine.say(f"Whatsapp aberto com sucesso, conforme as suas ordens {UserName}")
