@@ -27,6 +27,16 @@ engine.stop()
 
 #Funções que podem ser usadas no programa
 
+def HoraAtual():
+    hora = datetime.datetime.now()
+
+    hora = str(hora).split()
+    hora = hora[1]
+    hora = hora.split(":")
+    
+    hora = hora[0]
+    minuto = hora[1]
+
 def TabelaJogos():
     print("Jogo\t\tNúmero")
     print(30*"-")
