@@ -36,6 +36,8 @@ def HoraAtual():
     
     hora = hora[0]
     minuto = hora[1]
+    
+    return f"{hora} horas e {minuto} minutos"
 
 def TabelaJogos():
     print("Jogo\t\tNúmero")
@@ -114,14 +116,11 @@ def DEISE_():
 
         elif texto_entrada == "que horas são":
 
-            hora = datetime.datetime.now()
-
-            hora = str(hora).split()
-            hora = hora[1]
-            hora = hora.split(":")
-            hora = hora[0] + " horas e " + hora[1] + " minutos"
+            agora = HoraAtual()
             
-            engine.say(f"Agora são {hora} {UserName}")
+            resposta = f"agora são {agora}, {UserName}"
+                        
+            engine.say(resposta)
             engine.runAndWait()
             engine.stop()
             
