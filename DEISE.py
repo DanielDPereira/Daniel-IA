@@ -78,6 +78,8 @@ def DEISE_():
         if texto_entrada == "descansar":
 
             time.sleep(1)    
+
+            print(f"Até a próxima {UserName}, precisando, é só me chamar")
                 
             engine.say(f"Até a próxima {UserName}, precisando, é só me chamar")
             engine.runAndWait()
@@ -94,7 +96,9 @@ def DEISE_():
             engine.stop()
 
         elif texto_entrada == "quem é você":
-                
+
+                print(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Espetacular do Daniel e existo para ajudá-lo!")
+    
                 engine.say(f"Eu sou a {SysName}, o meu nome significa Especialista Inteligente de Serviço Espetacular do Daniel e existo para ajudá-lo!")
                 engine.runAndWait()
                 engine.stop()
@@ -109,6 +113,8 @@ def DEISE_():
             
             bateria = psutil.sensors_battery()
             percentual_bateria = str(bateria.percent)
+
+            print(f"{UserName}, o sistema está com um total de {percentual_bateria}% de bateria!")
             
             engine.say(f"{UserName}, o sistema está com um total de {percentual_bateria}% de bateria!")
             engine.runAndWait()
@@ -118,9 +124,9 @@ def DEISE_():
 
             agora = HoraAtual()
             
-            resposta = f"agora são {agora}, {UserName}"
+            print(f"agora são {agora}, {UserName}")
                         
-            engine.say(resposta)
+            engine.say(f"agora são {agora}, {UserName}")
             engine.runAndWait()
             engine.stop()
             
